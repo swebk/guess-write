@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="gl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="scaffolded-by" content="https://github.com/dart-lang/sdk">
+    <title>Guess Write</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="main.dart.js"></script>
+</head>
+
+<body>
+  <ul class="nav nav-tabs">
+    <li class="active">
+      <a href="./index.html">Casa</a>
+    </li>
+    <li><a href="./sobre.html">Sobre Guess</a></li>
+    <li><a href="./contacto.html">Contacto</a></li>
+  </ul>
+
+  <header style="width: 500px; margin: 0 auto; padding: 10px;">
+    <div style="text-align: center;">
+      <h1>Un lugar só para escribir</h1>
+      <p class="lead">Un lugar sinxelo para gardar as túas notas.</p>
+    </div>
+    <hr>
+    <div class="writing">
+      <div style="display: flex; flex-direction: column;">
+        <textarea id="nota-texto" rows="5" cols="33" style="width: 97%;"></textarea>
+        <button id="gardar-nota" class="btn btn-large btn-inverse" type="submit">Gardar Nota</button>
+      </div>
+    </div>
+    <hr>
+    <!--Notas creadas e almacenadas-->
+    <div>
+      <h4>Notas</h4>
+      <abbr title="Ao facer clic no botón 'eliminar notas', eliminaranse todas as túas notas sen excepción">
+        <button id="eliminar-nota" class="btn btn-danger">Eliminar Notas</button>
+      </abbr>
+      <div id="notas"></div>
+      <hr>
+      <small style="margin-top: 10px;">Total: <span id="total-notas"></span></small>
+    </div>
+  </header>
+  <hr>
+  <footer>
+    <p style="text-align: center;">© 2024 @swebk | Português - Galego</p>
+  </footer>
+</body>
+</html>
